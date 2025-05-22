@@ -35,9 +35,7 @@ label={buttonLabel}: Dynamically shows "Show Message" or "Hide Message" using a 
 2. helloWorldToggle.js
 This file contains the JavaScript logic for the component.
 
-javascript
-Copy
-Edit
+
 import { LightningElement } from 'lwc';
 
 export default class HelloWorldToggle extends LightningElement {
@@ -58,9 +56,7 @@ export default class HelloWorldToggle extends LightningElement {
 Getter (get):
 In JavaScript, a getter is a special method used to calculate and return a value. In this case:
 
-javascript
-Copy
-Edit
+
 get buttonLabel() {
     return this.showMessage ? 'Hide Message' : 'Show Message';
 }
@@ -69,9 +65,7 @@ It means: if showMessage is true, return "Hide Message"; otherwise, return "Show
 Ternary Operator (condition ? valueIfTrue : valueIfFalse):
 A shorthand for if-else logic. In this case:
 
-javascript
-Copy
-Edit
+
 this.showMessage ? 'Hide Message' : 'Show Message';
 If showMessage is true → "Hide Message", else → "Show Message".
 
@@ -82,9 +76,6 @@ If it was false, it becomes true — and vice versa.
 3. helloWorldToggle.js-meta.xml
 This file makes the component available in the Lightning App Builder.
 
-xml
-Copy
-Edit
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>59.0</apiVersion>
