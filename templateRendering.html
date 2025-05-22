@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Template Rendering" icon-name="custom:custom42">
+        <div class="slds-p-around_medium">
+            <lightning-button label = {buttonLabel} onclick = {handleClick} variant="brand"></lightning-button>
+        </div>
+
+        <template if:true={showMessage}>
+            <h2>Hello! you clicked on <b>Show Message</b> button that's the reason im visible. If you want to hide me back click on <b>Hide Message</b> above</h2>
+        </template>
+    </lightning-card>
+</template>
